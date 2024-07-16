@@ -292,7 +292,7 @@ section {
 
 
 
-/* ================================= Toffle Button ================================= */
+/* ================================= call to action box ================================= */
 
 
 .cta-box {
@@ -304,6 +304,14 @@ section {
     margin-bottom: 6rem;
 }
 
+.cta-box i{
+    font-size: 1.5rem;
+}
+
+.cta-box a{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
 .btn-outline-main {
     position: relative;
     display: flex;
@@ -348,6 +356,7 @@ section {
   .btn-outline-main a:hover{
     color: var(--bg-color);
     font-weight: 700;
+    transform: scale(1.1);
   }
 
   .btn-outline-main:hover .btn-outline-1, .btn-outline-main:hover .btn-outline-2{
