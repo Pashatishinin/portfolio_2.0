@@ -24,7 +24,7 @@ body > section {
 :root {
     --bg-color: #141414;
     --bg2-color:#495664;
-    --main-color:#fd96a9;
+    --main-color:#0FA3B1;
     --font-color:#ebebeb;
     --link-color:#cfcfcf;
 
@@ -36,7 +36,8 @@ a {
 
 
 
-/* ----- titles ----- */
+/* ================================= TITLES ================================= */
+
 
 .titles {
     position: absolute;
@@ -77,13 +78,15 @@ li.block {
 
 }
 
-/* ----- menu bar ----- */
+/* ================================= MENU bar icon ================================= */
+
 .menu-icon {
     position: relative;
-    display: none;
+    display: block;
     width: 30px;
     height: 30px;
     cursor: pointer;
+    
 }
 
 .menu-icon .bar,
@@ -110,7 +113,8 @@ li.block {
 .menu-icon.active .bar {
     opacity: 0;
 }
-/* ----- header ----*/
+/* ================================= HEADER ================================= */
+
 
 header {
     padding: 15px 8%;
@@ -127,16 +131,16 @@ header {
     
 }
 
-header a{
+header a, header li{
     font-weight: 500;
     transition: .8s;
     color: var(--link-color);
     transition: 0.8s all ease;
 }
 
-.navlist a:hover{
+header li:hover{
     font-weight: 700;
-    transform: scale(1.1);
+    transform: scale(1.1) translateY(5px);
     color: var(--main-color);
 }
 header .logo {
@@ -172,25 +176,36 @@ header .logo {
     transform: scale(1.1);
 }
 
-/* ----- mobile menu-----*/
+/* ================================= Mobile Menu ================================= */
+
+
 .nav-list-mobile {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: -1000px;
+    transition: all .3s ease;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: block;
+    left: 0;
     backdrop-filter: blur(10px);
-    display: none;
 }
 
 .nav-list-mobile a{
     display: flex;
-    color: var(--main-color);
+    color: var(--font-color);
     justify-content: space-between;
     width: 250px;
     align-items: center;
-    font-size:1.5rem;
+    font-size:1rem;
     transition: 0.8s all ease;
     padding: 0.5rem 1.9rem;
-    border-bottom: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--font-color);
     font-weight: medium;
+    background: transparent;
+    
     
 }
 
@@ -199,17 +214,21 @@ header .logo {
     border-radius: 50%;
     transition: 0.8s all ease;
     padding: -1px;
+    
 
 }
 
+.nav-list-mobile.active{
+    top: 100%;
+}
 .nav-list-mobile a:hover span{
     transition: 0.8s all ease;
-    color: var(--main-color);
+    color: var(--font-color);
 }
 
 .nav-list-mobile a:hover i{
     transform: scale(1.2);
-    color: var(--main-color);
+    color: var(--font-color);
 }
 
 .nav-list-mobile a:hover span{
@@ -220,7 +239,27 @@ header .logo {
     background: var(--bg2-color);
 }
 
-/* ----- hero section -----*/
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    opacity: 0;
+    transform: .3s;
+    pointer-events: none;
+}
+
+body.open .overlay{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* ================================= Hero Section ================================= */
+
 section {
     padding: 90px 8%;
 }
@@ -253,7 +292,8 @@ section {
 
 
 
-/*----  toffle button  ----*/
+/* ================================= Toffle Button ================================= */
+
 
 .cta-box {
     display: flex;
@@ -323,8 +363,8 @@ section {
   .btn-outline-talk {
     background: var(--font-color);
   }
-  
-  @keyframes morph {
+  /* ================================= @keyframes ================================= */
+    @keyframes morph {
     0% {
       border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
@@ -338,43 +378,22 @@ section {
     }
   }
 
-/* ----- about section ----- */
-.about {
-    background: var(--main-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
-}
-
-.about .about-img {
-    position: relative;
-    
-}
-
-.about .about-img img {
-    border-radius: 20px;
-    max-width: 500px;
-}
-
-.about .about-img .aboutHero {
-    width: 40vw;
-    height: auto;
-}
 
 
 
+/* ================================= MOBILE VERSION ================================= */
 
-/* -------------------------------------------------------- */
-
-@media(max-width:768px){
-
-    .nav-list {
+@media(max-width:991px){
+    .navlist {
         display: none;
     }
     .menu-icon .bar,.menu-icon::after,.menu-icon::before{
         display: block;
     }
+}
+@media(max-width:768px){
+
+    
 
     ul.nav-list-mobile{
         position: absolute;
