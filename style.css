@@ -19,13 +19,44 @@ section {
 
 /* ================================= PROJECTS ================================= */
 
+
+
+
+
 .projects h1{
     color: #fff;
     text-align: center;
-    margin: 60px auto;
+    margin: 0 auto;
     font-size: 40px;
     font-weight: 700;
+    text-transform: uppercase;
 }
+
+.projects .buttons{
+    margin: 20px auto;
+    text-align: center;
+}
+
+.projects button {
+    padding: 5px;
+    margin: 5px;
+}
+.projects button{
+    width: 100px;
+    border: 1px solid #505050;
+    margin: 10px;
+    color: #505050;
+    background: transparent;
+    border-radius: 5px;
+    transition: 1.2s ease;
+}
+
+.projects button:hover,button.mixitup-control-active{
+    transform: scale(1.2);
+    color: #fff;
+}
+
+
 
 .wall-item {
     display: block;
@@ -100,6 +131,8 @@ section {
     border: 1px solid #505050;
     margin: 5px;
 }
+
+
 .link-item i{
     padding: 5px;
     transition: 0.8s ease;
@@ -116,6 +149,11 @@ section {
 /* ================================= MOBILE VERSION ================================= */
 
 /* ============ [ PROJECTS ] ============ */
+@media(max-width:1200px){
+    html{
+        font-size:95%
+    }
+}
 
 @media(max-width:1040px) {
     .wall-column {
@@ -123,9 +161,25 @@ section {
     }
 }
 
+@media(max-width:991px){
+    header, section, footer{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
 @media(max-width:768px) {
     .wall-column {
         width: auto;
         float: none;
+    }
+
+@media(max-width:530px){
+        html{
+            font-size: 80%;
+        }
+        section {
+            padding: 50px 3%;
+        }
     }
 }

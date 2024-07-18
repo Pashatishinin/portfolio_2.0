@@ -15,11 +15,17 @@
 <body>
     <section class="projects" id="projects">
         <div>
-            <h1>Projects</h1>
+            <h1>My Projects</h1>
+        </div>
+        <div class="buttons">
+            <button class="button mixitup-control-active" data-filter="all"><span>All</span></button>
+            <button class="button" data-filter=".python">Python</button>
+            <button class="button" data-filter=".front">Frontend</button>
+            <button class="button" data-filter=".design">Design</button>
         </div>
         <div class="wall">
 
-            <div class="wall-item">
+            <div class="wall-item design">
                 <div class="project-img">
                     <img src="img/inuka.png" alt="">
                 </div>
@@ -37,7 +43,7 @@
                 
             </div>
 
-            <div class="wall-item">
+            <div class="wall-item design">
                 <div class="project-img">
                     <img src="img/bentezhne.png" alt="">
                 </div>
@@ -54,13 +60,15 @@
                 </div>
                 </div>
 
-            <div class="wall-item">
+            <div class="wall-item python front design">
                 <div class="project-img">
                     <img src="img/meetme.png" alt="">
                 </div>
                 
                 <h2>meetme</h2>
                 <ul class="skills-list">
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
                     <li>Python</li>
                     <li>Django</li>
                     <li>PostgreSQL</li>
@@ -69,17 +77,20 @@
                     <li>JS</li>
                 </ul>
                 <div class="link-box">
+                    <div class="link-item"> 
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                    </div>
                     <div class="link-item">
                         <a href="#"><i class='bx bx-globe'></i></a>
                     </div>
-                    <div class="link-item"> 
-                        <a href="#"><i class='bx bxl-github'></i></a>
+                    <div class="link-item">
+                        <a href="#"><i class='bx bxs-file'></i></a>
                     </div>
                     
                 </div>
                 </div>
 
-            <div class="wall-item">
+            <div class="wall-item design">
                 <div class="project-img">
                     <img src="img/vote_note.png" alt="">
                 </div>
@@ -93,6 +104,7 @@
     
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
 <script src="jaliswall.js"></script>
 <script src="script.js"></script>
 </html>
