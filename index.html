@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio.</title>
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,68 +13,86 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="#hero" class="logo"><span>PAVLO</span><span>TISHYNIN</span></a>
-        <ul class="navlist">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#service">SERVICE</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#challenge">CHALLENGE</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-        <div class="menu-icon">
-            <div class="bar"></div>
+    <section class="projects" id="projects">
+        <div>
+            <h1>Projects</h1>
         </div>
-        <div class="nav-list-mobile">
-            <a href="#"><span>HOME </span><i class='bx bx-right-down-arrow-circle'></i></a>
-            <a href="#"><span>ABOUT</span> <i class='bx bx-right-down-arrow-circle'></i></a>
-            <a href="#"><span>SERVICE</span> <i class='bx bx-right-down-arrow-circle'></i></a>
-            <a href="#"><span>PORTFOLIO</span> <i class='bx bx-right-down-arrow-circle'></i></a>
-            <a href="#"><span>CHALLENGE</span> <i class='bx bx-right-down-arrow-circle'></i></a>
-            <a href="#"><span>CONTACT </span><i class='bx bx-right-down-arrow-circle'></i></a>
-        </div>
-    </header>
-    
-   
-    <section class="hero" id="hero">
-        <div class="hero-info">
-            <h1>Hi <img src="img/waving-hand-svgrepo-com.svg" alt="">, I'm <span>Pavlo</span></h1>
-            <div class="text-animate">
-                <span class="type_effect"></span>
-            </div>
+        <div class="wall">
 
-            <!-- call to action box-->
-            <div class="cta-box">
-                    <div class="btn-outline-main btn-outline-talk-main">
-                        <div class="btn-outline btn-outline-1 btn-outline-talk"></div>
-                        <div class="btn-outline btn-outline-2 btn-outline-talk"></div>
-                        <a href="mailto:pashatishinin@gmail.com">LET'S TALK! <i class='bx bx-message-square-dots' ></i></a>
-                    
-                    </div>
-
-                    <div class="btn-outline-main ">
-                        <div class="btn-outline btn-outline-1"></div>
-                        <div class="btn-outline btn-outline-2"></div>
-                        <a href="img/resume.pdf" target="_blank" > DOWNLOAD  <i class='bx bx-download'></i></a>
+            <div class="wall-item">
+                <div class="project-img">
+                    <img src="img/inuka.png" alt="">
+                </div>
+                
+                <h2>Inuka</h2>
+                <ul class="skills-list">
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
+                </ul>
+                <div class="link-box">
+                    <div class="link-item">
+                        <a href="#"><i class='bx bxs-file'></i></a>
                     </div>
                 </div>
-            
+                
+            </div>
+
+            <div class="wall-item">
+                <div class="project-img">
+                    <img src="img/bentezhne.png" alt="">
+                </div>
+                
+                <h2>Ben Tezhne</h2>
+                <ul class="skills-list">
+                    <li>Illustrator</li>
+                    <li>Photoshop</li>
+                </ul>
+                <div class="link-box">
+                    <div class="link-item">
+                        <a href="#"><i class='bx bxs-file'></i></a>
+                    </div>
+                </div>
+                </div>
+
+            <div class="wall-item">
+                <div class="project-img">
+                    <img src="img/meetme.png" alt="">
+                </div>
+                
+                <h2>meetme</h2>
+                <ul class="skills-list">
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>PostgreSQL</li>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>JS</li>
+                </ul>
+                <div class="link-box">
+                    <div class="link-item">
+                        <a href="#"><i class='bx bx-globe'></i></a>
+                    </div>
+                    <div class="link-item"> 
+                        <a href="#"><i class='bx bxl-github'></i></a>
+                    </div>
+                    
+                </div>
+                </div>
+
+            <div class="wall-item">
+                <div class="project-img">
+                    <img src="img/vote_note.png" alt="">
+                </div>
+                
+                <h2>Vote & Note</h2>
+                
+                </p>
+            </div>
         </div>
     </section>
-
-    <!---titles preloader--->
-    <div class="titles">
-        <div class="title title-1"><h1>Hello!</h1></div>
-        <div class="title title-2"><h1>Hallo!</h1></div>
-        <div class="title title-3"><h1>Hola!</h1></div>
-        <div class="title title-4"><h1>Привіт!</h1></div>
-    </div>
+    
 </body>
-<!-- tweenmax -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-<script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
-<!-- typing effect -->
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="jaliswall.js"></script>
 <script src="script.js"></script>
 </html>
