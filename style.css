@@ -14,16 +14,29 @@ body {
 }
 
 :root {
-    --bg-color: #141414;
-    --bg2-color:#010101;
+    --main-color:#ffbe98;
+
+    --bg-color:#242424;
+    --bg2-color:#e8e8e8;
+
+    --font-color:#1e1e1e;
+    --font2-color:#f0f0ea;
+
+    --link-color:#505050;
+
+    /*===============*/
+
+
+    /* --bg-color: #141414; */
+    /* --bg2-color:#010101; */
     --bg3-color:#1e1e1e;
-    --bg4-color:#3aafa9;
-    --font2-color:#505050;
+    --bg4-color:#ffbe98;
+    /* --font2-color:#505050; */
     --font3-color:#feffff;
     --font4-color:#17252a;
-    --main-color:#66fcf1;
-    --font-color:#ebebeb;
-    --link-color:#cfcfcf;
+    
+    /* --font-color:#ebebeb; */
+    /* --link-color:#cfcfcf; */
 
 }
 
@@ -57,7 +70,7 @@ header nav {
 }
 
 .logo a{
-    color: var(--font-color);
+    color: var(--font2-color);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
@@ -84,7 +97,7 @@ nav ul li:last-child {
 nav ul li a{
     display: inline-block;
     outline: none;
-    color: var(--font-color);
+    color: var(--font2-color);
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
@@ -97,7 +110,7 @@ nav ul li a{
 }
 
 #nav:checked + .nav-btn i {
-    background: var(--font-color);
+    background: var(--font2-color);
     transition: transform 0.2s ease;
 }
 
@@ -146,13 +159,13 @@ section {
     align-items: center;
     grid-gap: 4em;
     color: var(--font-color);
-    background: var(--bg4-color);
+    background: var(--bg2-color);
 }
 
 .hero-info h1 {
     font-size: 3.5rem;
     line-height: 100%;
-    color: --font3-color;
+    color: var(--font-color);
     
 }
 
@@ -162,13 +175,105 @@ section {
 .text-animate span{
     font-size: 7rem;
     font-weight: 800;
-    color: var(--font4-color);
+    color: var(--main-color);
 }
 
 .cta-box {
+    margin-top: 5vh;
     display: flex;
+    gap: 2rem;
 }
 
+.button-container {
+    text-transform: uppercase;
+    position: relative;
+    width: 180px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    transition: 0.5s;
+    border: 1px solid rgba(0,0,0,0.2);
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+
+
+.button-container div{
+    text-align: center;
+    width: 101%;
+    height: 100%;
+    font-size: 16px;
+    background: var(--bg-color);
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    border: none;
+    color: var(--bg-color);
+    cursor: pointer;
+    animation: anim2 0.7s steps(22) forwards;
+}
+.button-container div a{
+    text-decoration: none;
+    color: var(--bg2-color);
+}
+.undermask {
+    padding-top: 15px ;
+}
+.button-container div:hover {
+    animation: anim1 0.7s steps(22) forwards;
+  }
+  .button-container-CV div {
+    color: var(--bg2-color);
+    background: var(--bg2-color);
+}
+
+.button-container-CV div a{
+    color: var(--bg-color);
+    
+}
+
+  .mask {
+    position: absolute;
+    color: var(--bg-color);
+    text-align: center;
+    width: 101%;
+    font-size: 16px;
+    margin-top: 15px;
+    overflow: hidden;
+  }
+
+  .button-container-CV .mask{
+    color: var(--bg2-color);
+    background: var(--bg-color);
+    height: 60vh;
+    margin-top: 0;
+    padding-top: 15px;
+  }
+  
+  @keyframes anim1 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  
+  @keyframes anim2 {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
 
 
 
@@ -201,16 +306,16 @@ section {
     text-transform: uppercase;
     font-weight: 700;
     width: 100px;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--link-color);
     margin: 10px;
-    color: var(--font2-color);
+    color: var(--link-color);
     background: transparent;
     transition: 1.2s ease;
 }
 
 .projects button:hover,button.mixitup-control-active{
-    transform: scale(1.2);
-    color: var(--font2-color);
+    transform: translateY(-6px);
+    color: var(--font-color);
     background: var(--main-color);
 }
 
@@ -246,7 +351,7 @@ section {
 
 .wall-item h2 {
     text-align: center;
-    color: var(--font-color);
+    color: var(--font2-color);
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -268,12 +373,13 @@ section {
     text-transform: uppercase;
     font-size: 10px;
     margin-top: 10px;
+    color: var(--link-color);
 }
 
 .skills-list li {
     padding: 5px;
     margin: 5px;
-    border: 1px solid var(--font2-color);
+    border: 1px solid var(--link-color);
 }
 
 .link-box {
@@ -285,7 +391,7 @@ section {
 }
 .link-item {
     border-radius: 50%;
-    border: 1px solid var(--font2-color);
+    border: 1px solid var(--link-color);
     margin: 5px;
 }
 
@@ -293,7 +399,7 @@ section {
 .link-item i{
     padding: 5px;
     transition: 0.8s ease;
-    color: var(--font2-color);
+    color: var(--link-color);
     
 }
 
@@ -336,7 +442,7 @@ section {
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: var(--bg3-color);
+        background: var(--bg-color);
         opacity: 0;
         transition: all 0.2s ease;
     }
@@ -404,7 +510,7 @@ section {
         display: block;
         width: 20px;
         height: 2px;
-        background: var(--font-color);
+        background: var(--font2-color);
         border-radius: 2px;
         margin-left: 14px;
     }
