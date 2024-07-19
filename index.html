@@ -13,6 +13,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <div class="logo">
+                <a href="#">Pavel Tishinin</a>
+            </div>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Projects</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+    
+    <section class="hero">
+        <div class="hero-info">
+            <h1>Hi <img src="img/waving-hand-svgrepo-com.svg" alt="">, I'm <span>Pavlo</span></h1>
+            <div class="h1-revealer"></div>
+            <div class="text-animate">
+                <span class="type_effect"></span>
+            </div>
+            
+
+            <!-- call to action box-->
+            <div class="cta-box">
+                    <div class="btn-outline-main btn-outline-talk-main">
+                        <div class="btn-outline btn-outline-1 btn-outline-talk"></div>
+                        <div class="btn-outline btn-outline-2 btn-outline-talk"></div>
+                        <a href="mailto:pashatishinin@gmail.com">LET'S TALK! <i class='bx bx-message-square-dots' ></i></a>
+                    
+                    </div>
+
+                    <div class="btn-outline-main ">
+                        <div class="btn-outline btn-outline-1"></div>
+                        <div class="btn-outline btn-outline-2"></div>
+                        <a href="img/resume.pdf" target="_blank" > DOWNLOAD  <i class='bx bx-download'></i></a>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
     <section class="projects" id="projects">
         <div>
             <h1>My Projects</h1>
@@ -103,8 +154,14 @@
     </section>
     
 </body>
+<script src="https://unpkg.com/scrollreveal"></script>
+<!-- typing effect -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
 <script src="jaliswall.js"></script>
 <script src="script.js"></script>
 </html>
