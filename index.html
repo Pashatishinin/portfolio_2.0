@@ -3,169 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio.</title>
-    <!--google fonts-->
+    <title>Portfolio</title>
+    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
      <!--box icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <!--style-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <a href=""><span>PAVLO</span><span>TISHININ</a>
+        </div>
         <nav>
-            <input type="checkbox" id="nav" class="hidden">
-            <label for="nav" class="nav-btn">
-                <i></i>
-                <i></i>
-                <i></i>
-            </label>
-            <div class="logo">
-                <a href="#">Pavel Tishinin</a>
-            </div>
-            <div class="nav-wrapper">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">My Projects</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT ME</a></li>
+                <li><a href="">CHALLENGES</a></li>
+                <li><a href="">PROJECTS</a></li>
+                <li><a href="">CONTACT ME</a></li>
+            </ul>
         </nav>
-
     </header>
-    
     <section class="hero">
-        <div class="hero-info">
-            <h1>Hi <img src="img/waving-hand-svgrepo-com.svg" alt="">, I'm <span>Pavlo</span></h1>
-            <div class="h1-revealer"></div>
-            <div class="text-animate">
-                <span class="type_effect"></span>
-            </div>
-            
-
-            <!-- call to action box-->
-            <div class="cta-box">
-                <div class="container">
-                    <div class="button-container">
-                        <span class="mask">LET'S TALK! <i class='bx bx-message-square-dots' ></i></span>
-                        <div class="undermask"><a href="mailto:pashatishinin@gmail.com">LET'S TALK! <i class='bx bx-message-square-dots' ></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="button-container button-container-CV">
-                        <span class="mask">Download CV <i class='bx bx-download'></i></span>
-                        <div class="undermask"><a href="img/resume.pdf" target="_blank" >Download CV <i class='bx bx-download'></i></a></div>
-                    </div>
-                </div>
-                
-                    
-            </div>
-            
+        <h2>Hi <img src="img/waving-hand-svgrepo-com.svg" alt="">, I'm <span>Pavlo</span></h2>       
+        <div class="text-animate">
+            <span class="type_effect"></span>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, magnam illo obcaecati quasi quidem sint quod ipsa qui fuga corrupti.</p>
+        <div class="cta-box">
+            <a href="#" class="cta_talk">LET"S TALK <i class='bx bx-message-square-dots' ></i></a>
+            <a href="#" class="cta_cv">DOWNLOAD CV <i class='bx bx-download'></i></a>
         </div>
     </section>
-    <section class="projects" id="projects">
-        <div>
-            <h1>My Projects</h1>
-        </div>
-        <div class="buttons">
-            <button class="button mixitup-control-active" data-filter="all"><span>All</span></button>
-            <button class="button" data-filter=".python">Python</button>
-            <button class="button" data-filter=".front">Frontend</button>
-            <button class="button" data-filter=".design">Design</button>
-        </div>
-        <div class="wall">
-
-            <div class="wall-item design">
-                <div class="project-img">
-                    <img src="img/inuka.png" alt="">
+    <section class="about">
+        <h1>About me</h1>
+        <div class="about-wall">
+            <div class="about-wall-item">
+                <h3>Main Skills</h3>
+                <div class="text-box">
+                    <h4>Python Developer</h4>
+                    <ul class="skills">
+                        <li>Python</li>
+                        <li>Django</li>
+                    </ul>
                 </div>
-                
-                <h2>Inuka</h2>
-                <ul class="skills-list">
-                    <li>Illustrator</li>
-                    <li>Photoshop</li>
-                </ul>
-                <div class="link-box">
-                    <div class="link-item">
-                        <a href="#"><i class='bx bxs-file'></i></a>
-                    </div>
+                <div class="text-box">
+                    <h4>Web Developer</h4>
+                    <ul class="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
                 </div>
-                
+                <div class="text-box">
+                    <h4>Design</h4>
+                    <ul class="skills">
+                        <li>Illustrator</li>
+                        <li>Photoshop</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="wall-item design">
-                <div class="project-img">
-                    <img src="img/bentezhne.png" alt="">
+            <div class="about-wall-item">
+                <h3>Education</h3>
+                <div class="text-box">
+                    <h4>Electrical Engineer</h4>
+                    <span>National Technical University «Kharkiv Polytechnic Institute» | 2008-2013</span>
                 </div>
-                
-                <h2>Ben Tezhne</h2>
-                <ul class="skills-list">
-                    <li>Illustrator</li>
-                    <li>Photoshop</li>
-                </ul>
-                <div class="link-box">
-                    <div class="link-item">
-                        <a href="#"><i class='bx bxs-file'></i></a>
+                <div class="text-box">
+                    <h4>Python Developer </h4>
+                    <span>HILLEL | 2022</span>
+                </div>
+                <div class="text-box">
+                    <h4>Python Developer </h4>
+                    <span>ITVDN Courses | 2022</span>
+                </div>
+            </div>
+            <div class="about-wall-item">
+                <h3>Language</h3>
+                <div class="text-box">
+                    <h4>Ukranian</h4>
+                    <div class="level">
+                        <div class="level-box"></div>
+                        <div class="level-fill-box ua"></div>
                     </div>
                 </div>
-                </div>
-
-            <div class="wall-item python front design">
-                <div class="project-img">
-                    <img src="img/meetme.png" alt="">
-                </div>
-                
-                <h2>meetme</h2>
-                <ul class="skills-list">
-                    <li>Illustrator</li>
-                    <li>Photoshop</li>
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>PostgreSQL</li>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>JS</li>
-                </ul>
-                <div class="link-box">
-                    <div class="link-item"> 
-                        <a href="#"><i class='bx bxl-github'></i></a>
+                <div class="text-box">
+                    <h4>Russian</h4>
+                    <div class="level">
+                        <div class="level-box"></div>
+                        <div class="level-fill-box ru"></div>
                     </div>
-                    <div class="link-item">
-                        <a href="#"><i class='bx bx-globe'></i></a>
+                </div>
+                <div class="text-box">
+                    <h4>English</h4>
+                    <div class="level">
+                        <div class="level-box"></div>
+                        <div class="level-fill-box en"></div>
                     </div>
-                    <div class="link-item">
-                        <a href="#"><i class='bx bxs-file'></i></a>
+                </div>
+                <div class="text-box">
+                    <h4>German</h4>
+                    <div class="level">
+                        <div class="level-box"></div>
+                        <div class="level-fill-box gm"></div>
                     </div>
                     
                 </div>
+                <div class="text-box">
+                    <h4>Spanish</h4>
+                    <div class="level">
+                        <div class="level-box"></div>
+                        <div class="level-fill-box sp"></div>
+                    </div>
                 </div>
-
-            <div class="wall-item design">
-                <div class="project-img">
-                    <img src="img/vote_note.png" alt="">
-                </div>
-                
-                <h2>Vote & Note</h2>
-                
-                </p>
             </div>
         </div>
+    </section>
+    <section class="challenge">
+        <h1>My Challenges</h1>
+    <div class="slider" reverse="true" style="
+        --width: 280px;
+        --height: 100vh;
+        --quantity: 8;
+    ">
+        <div class="list">
+            <div class="item" style="--position: 1"><img src="img/patish_1.png" alt=""></div>
+            <div class="item" style="--position: 2"><img src="img/patish_2.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="img/patish_3.png" alt=""></div>
+            <div class="item" style="--position: 4"><img src="img/patish_4.png" alt=""></div>
+            <div class="item" style="--position: 5"><img src="img/patish_5.png" alt=""></div>
+            <div class="item" style="--position: 6"><img src="img/patish_6.png" alt=""></div>
+            <div class="item" style="--position: 7"><img src="img/patish_7.png" alt=""></div>
+            <div class="item" style="--position: 8"><img src="img/patish_8.png" alt=""></div>
+        </div>
+    </div>
     </section>
     
 </body>
-<script src="https://unpkg.com/scrollreveal"></script>
 <!-- typing effect -->
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
 
-<script src="jaliswall.js"></script>
 <script src="script.js"></script>
 </html>
