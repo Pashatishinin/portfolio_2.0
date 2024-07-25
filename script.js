@@ -22,3 +22,10 @@ navlist.addEventListener("click",()=>{
     navlist.classList.remove("active");
     document.body.classList.remove("open");
 })
+
+
+// project effect 
+$('.wall').jaliswall({
+    item : '.wall-item',
+    columnClass : '.wall-column'
+});

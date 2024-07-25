@@ -444,14 +444,6 @@ h1{
     overflow: hidden;
 }
 
-.wall {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    
-}
 .project-title {
     display: flex;
     justify-content: space-between;
@@ -508,7 +500,6 @@ h1{
 }
 
 .wall-item {
-    width: 32%;
     display: block;
     margin: 0 0 24px 0;
     background: var(--bg2-color);
@@ -525,6 +516,16 @@ h1{
     border-image-source: var(--main2-color);
     border-image-slice: 1;
     border-width: 2px;
+}
+
+.wall-column {
+    display: block;
+    position: relative;
+    width: 33.33%;
+    float: left;
+    padding: 0 12px;
+    box-sizing: border-box;
+
 }
 
 
@@ -660,8 +661,8 @@ footer span {
 
 .hero,
 .about,
-/* .challenge, */
-.projects,
+.challenge,
+/* .projects, */
 .contact,
 header,
 footer {
@@ -721,7 +722,20 @@ footer {
 }
 
 
-/* challenge */
-@media(max-width:1200px){
+/* project */
+@media(max-width:991px){
+    .projects h1{
+        font-size: 2rem;
+    }
+    .wall-column{
+        width: 50%;
+        
+    }
+}
 
+@media(max-width:480px){
+    .wall-column{
+        width: auto;
+        float: none;
+    }
 }
