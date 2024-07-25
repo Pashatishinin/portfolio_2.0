@@ -18,6 +18,25 @@ $('.wall').jaliswall({
 
 
 
+// scroll reveal
+ScrollReveal({
+    distance:"90px",
+    duration:2000,
+    delay:200,
+    reset: true,
+});
+
+ScrollReveal().reveal('h1,.text-animate, h2,.hero p', { origin: 'top'});
+ScrollReveal().reveal('.contact-form', { origin: 'left'});
+ScrollReveal().reveal('.cta-box', { origin: 'bottom'});
+ScrollReveal().reveal('.contact-detail', { origin: 'right'});
+ScrollReveal().reveal('.wall-item,.about-wall-item', { origin: 'bottom', interval:300});
+
+
+
+
+
+
 // active hamburger menu
 let menuIcon = document.querySelector(".menu-icon");
 let navlist = document.querySelector(".navlist");
@@ -33,6 +52,8 @@ navlist.addEventListener("click",()=>{
     navlist.classList.remove("active");
     document.body.classList.remove("open");
 })
+
+
 
 
 
