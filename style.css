@@ -11,6 +11,8 @@
     --bg2-color: #1E1E1E;
     --font-color: #F0F0EA;
     --font2-color: #505050;
+    --semi-main-color: linear-gradient(180deg, rgba(80,80,80,1) 0%, rgba(36,36,36,0.1) 50%);
+    
     --main-color: linear-gradient(180deg, rgba(251,218,97,1) 0%, rgba(255,90,205,1) 100%);
     --main2-color: linear-gradient(90deg, rgba(251,218,97,1) 0%, rgba(255,90,205,1) 100%);
 
@@ -409,36 +411,21 @@ h1{
 /* ================================= PROJECTS ================================= */
 
 
-.projects .buttons{
-    margin: 30px 0;
-    text-align: center;
-    
+.category {
+    padding: 0 5px 5px 5px;
+    overflow: hidden;
+}
+.category h5{
+    font-family: var(--font-j);
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgba(80,80,80,0.2);
 
 }
 
-.projects .buttons button{
-    width: 104px;
-    height: 42px;
-    margin: 10px;
-    border: 1px solid var(--font-color);
-    background: transparent;
-    color: var(--font-color);
-    text-transform: uppercase;
-    font-weight: 700;
-    transition: 0.8s ease;
-    border-radius: 5px;
+.wall {
+    margin-top: 30px;
 }
-
-.projects .buttons button:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--box-shadow);
-    background: var(--main2-color);
-    border: none;
-    color: var(--bg-color);
-
-}
-
-
 .project-img {
     width: 100%;
     overflow: hidden;
@@ -722,6 +709,15 @@ footer {
 }
 
 
+
+
+
+
+
+/* ================================================================================== */
+/* ================================= MOBILE VERSION ================================= */
+/* ================================================================================== */
+
 /* project */
 @media(max-width:991px){
     .projects h1{
@@ -731,11 +727,23 @@ footer {
         width: 50%;
         
     }
+    .projects h4{
+        font-size: 1rem;
+    }
+    .project-links {
+        gap: 0.5rem;
+    }
+    .projects i{
+        font-size: 1rem;
+    }
 }
 
-@media(max-width:480px){
+@media(max-width:560px){
     .wall-column{
         width: auto;
         float: none;
+    }
+    .skills-list {
+        font-size: 8px;
     }
 }

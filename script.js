@@ -7,6 +7,17 @@ var typingEffect = new Typed(".type_effect",{
     backDelay : 1000
 });
 
+
+
+
+// project effect 
+$('.wall').jaliswall({
+    item : '.wall-item',
+    columnClass : '.wall-column'
+});
+
+
+
 // active hamburger menu
 let menuIcon = document.querySelector(".menu-icon");
 let navlist = document.querySelector(".navlist");
@@ -24,8 +35,5 @@ navlist.addEventListener("click",()=>{
 })
 
 
-// project effect 
-$('.wall').jaliswall({
-    item : '.wall-item',
-    columnClass : '.wall-column'
-});
+
+
