@@ -333,6 +333,11 @@ section {
     overflow: hidden;
 }
 
+.wall {
+    display: flex;
+    
+}
+
 .project-img img{
     display: block;
     width: 100%;
