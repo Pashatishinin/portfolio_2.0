@@ -459,6 +459,8 @@ h1{
     transition: 0.8s ease;
 }
 
+
+
 .project-links a:hover{
     transform: scale(1.2);
     background: var(--main2-color);
